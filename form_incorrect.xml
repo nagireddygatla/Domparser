@@ -1,0 +1,121 @@
+<?xml version = "1.0"?> 
+<dataInputForm id="1">
+<title> 
+  
+</title>
+  
+<textbox datatype="string">
+  <name>firstname</name> 
+  <caption>First Name:</caption>
+  <size>20</size>
+  <maxlength>50</maxlength>
+</textbox>
+
+<break></break>
+
+<textbox datatype="string">
+  <name>lastname</name> 
+  <caption>Last Name:</caption>
+  <size>20</size>
+  <maxlength>50</maxlength>
+</textbox>
+
+<break></break>
+
+<textbox datatype="integer" key="key">
+  <name>ssn</name> 
+  <caption>SSN:</caption>
+  <size>9</size>
+  <maxlength>9</maxlength>
+</textbox>
+
+<break></break>
+<break></break>
+
+<radio>
+  <name>gender</name>
+  <caption>Gender</caption>
+  <radiogroup>
+    <radioelement>
+      <value>male</value>
+      <caption>Male</caption>   
+    </radioelement>
+    <break></break>
+    <radioelement>
+      <value>female</value>
+      <caption>Female</caption>   
+    </radioelement>
+    <break></break>
+  </radiogroup>
+</radio>
+<checkboxes>
+  <name>fields</name> 
+  <caption>Check the fields of your interest</caption>
+  <checkboxgroup>
+    <checkbox>
+      <value>databases</value>
+      <caption>Databases</caption>
+    </checkbox>   
+    <break></break>
+    <checkbox>
+      <value>semanticweb</value> 
+      <caption>Semantic Web</caption>
+    </checkbox>   
+    <break></break>
+    <checkbox>
+      <value>datamining</value> 
+      <caption>Data Mining</caption>
+    </checkbox>   
+  </checkboxgroup>
+</checkboxes>
+
+<break></break>
+<break></break>
+
+<select>
+  <name>type</name>
+  <caption>Choose your employment type</caption>
+  <options>
+    <option>
+      <value>full</value>
+      <caption>Full Time</caption>
+    </option>
+    <option>
+      <value>part</value>
+      <caption>Part Time</caption>
+    </option>
+  </options>
+</select>
+
+<break></break>
+<break></break>     
+
+<checkboxes>
+  <name>city
+  <caption>Check your preferred location</caption>
+  <checkboxgroup>
+    <checkbox>
+      <value>atlanta</value>
+      <caption>Atlanta</caption>
+    </checkbox>   
+    <break></break>
+    <checkbox>
+      <value>newyork</value> 
+      <caption>New York</caption>
+    </checkbox>   
+    <break></break>
+    <checkbox>
+      <value>sanfransisco</value> 
+      <caption>San Fransisco</caption>
+    </checkbox>   
+  </checkboxgroup>
+</checkboxes>
+
+<break></break>
+<break></break>
+
+<submit>
+  <caption>Click Here</caption>
+</submit>
+
+</dataInputForm>

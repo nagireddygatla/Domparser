@@ -1,0 +1,49 @@
+<html><head><meta charset=ISO-8859-1>
+<title>Job Application Page</title>
+<script type ="text/javascript">
+function validation(){
+var a = new RegExp(/^\d+$/);
+if(document.domparse.firstname.value==""){
+alert("Please enter First Name:");
+return false;}
+if(a.test(document.domparse.firstname.value)){
+alert("Please enter string in First Name:");
+return false;}
+var a = new RegExp(/^\d+$/);
+if(document.domparse.lastname.value==""){
+alert("Please enter Last Name:");
+return false;}
+if(a.test(document.domparse.lastname.value)){
+alert("Please enter string in Last Name:");
+return false;}
+var c = new RegExp(/^[A-Za-z]+$/);
+if(document.domparse.ssn.value==""){
+alert("Please enter SSN:");
+return false;}
+if(c.test(document.domparse.ssn.value)){
+alert("Please enter integer in SSN:");
+return false;}
+}</script></head>
+<body><h1>Job Application Page</h1><form name="domparse" method="post"  action = "domparse.jsp" onsubmit="return validation();"><table>
+<tr><td>First Name:</td><td><input type="text" id = "firstname" size = "20" name="firstname" maxlength = "50"/></td></tr>
+<tr><td>Last Name:</td><td><input type="text" id = "lastname" size = "20" name="lastname" maxlength = "50"/></td></tr>
+<tr><td>SSN:</td><td><input type="text" id = "ssn" size = "9" name="ssn" maxlength = "9"/></td></tr>
+<tr><td>Check the fields of your interest</td><td>
+<input type="checkbox" name="fields" value="databases">Databases<br>
+<input type="checkbox" name="fields" value="semanticweb">Semantic Web<br>
+<input type="checkbox" name="fields" value="datamining">Data Mining<br>
+</td></tr>
+<tr><td>Check your preferred locations</td><td>
+<input type="checkbox" name="city" value="atlanta">Atlanta<br>
+<input type="checkbox" name="city" value="newyork">New York<br>
+<input type="checkbox" name="city" value="sanfransisco">San Fransisco<br>
+</td></tr>
+<tr><td>Gender</td><td>
+<input type="radio" name="gender" value="male" checked>Male<br>
+<input type="radio" name="gender" value="female" checked>Female<br>
+</td></tr>
+<tr><td>Choose your employment type</td><td><select name=jobtype>
+<option value="full">Full Time</option>
+<option value="part">Part Time</option>
+</select></td></tr>
+<tr><td></td><td><input type="submit" value="Click Here"></td></table></form></body></html>
